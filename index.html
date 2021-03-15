@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    
+<nav id="navbar">
+  <header>This is about Javascript Documentation</header>
+  <ul><li> <a class="nav-link" href="#introduction"> Introduction </a></li></ul>
+  <ul><li> <a class="nav-link" href="#javascript">Javascript </a></li></ul>
+  <ul><li> <a class="nav-link" href="#data_structure"> Data Structure </a></li></ul>
+  <ul><li> <a class="nav-link" href="#constructor"> Constructor </a></li></ul>
+  <ul><li> <a class="nav-link" href="#javascript_promises">Javascript Promises </a></li></ul>
+  
+</nav>
+
+<main id="main-doc">
+  <p id="main-doc-text"> Technical Documentation </p>
+  
+  <section class="main-section"   id="introduction">
+    <header> Introduction </header>
+    <article>
+      <p> A programming language defines a set of instructions that are compiled together to perform a specific task by the CPU (Central Processing Unit).<br> The programming language mainly refers to high-level languages such as C, Javascript C++, Pascal, Ada, COBOL etc </p>
+      <p> But in this documentation we will be talking about a programming language called <strong>Javascript</strong>, often abbreviated as <strong>JS</strong> </p>
+
+    </article>
+  </section><br><br><br>
+  
+  <section class="main-section" id="javascript">
+    <header> Javascript </header>
+    <article>
+      <p> JavaScript is the world's most popular programming language. <br>JavaScript is the programming language of the Web.<br> JavaScript is easy to learn.<br>Below are examples of Javascript code: </p>
+
+      <p><strong> Print my name </strong></p>
+      <code>
+        function printMyName(myName) { 
+          prompt("My name is " + myName); 
+        }
+          printMyName("Dorcas");
+        </code>
+
+      <p> <strong>Printing 1 to 10 </strong></p>
+      <code>
+        for (var x = 1; input <= 10; x++) {
+          console.log(x);
+         }      
+      </code><br>
+
+        <p> <strong>Check for even number</strong></p>
+        <code> 
+          for(i=10; i<=20; i++){
+            if(i % 2 == 0){
+              console. log(i);
+            }
+          }
+           </code>
+      </article>
+  </section><br><br><br>
+  
+  <section class="main-section" id="data_structure">
+     <header> Data Structure </header>
+    <article>
+      <p> JavaScript has primitive and non-primitive data structures. Primitive data structures and data types are native to the programming language. These include boolean, null, number, string, etc. ... <br>These include linear data structures, static data structures, and dynamic data structures, like queue and linked lists </p>
+      <p> The four types of basic data structures supported by JavaScript are: </p>
+      <ul>
+        <li>Array List</li>
+        <li>Maps</li>
+        <li>Records</li>
+        <li>JSON tables</li>
+      </ul>
+    </article>
+    
+  </section><br><br><br>
+  
+  <section class="main-section" id="constructor">
+    <header> Constructor </header>
+    <article>
+      <p> The constructor method is a special method of a class for creating and initializing an object of that class. <br> A constructor enables you to provide any custom initialization that must be done before any other methods can be called on an instantiated object. </p>
+      <p> Example of constructor in Javascript </p>
+       <code> class Person {
+
+    constructor(name) {
+      this.name = name;
+    }
+
+    introduce() {
+      console.log(`Hello, my name is ${this.name}`);
+    }
+
+  }
+
+  const dorcas = new Person('Dorcas');
+
+  doecas.introduce();
+      </code>
+    </article>
+  </section><br><br><br>
+  
+  <section class="main-section" id="javascript_promises">
+    <header> Javascript Promises </header>
+    <article>
+      <p> A Promise is a JavaScript object that links producing code and consuming code. <br> A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason.<br> This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future</p>
+      <p> Example is show below </p>
+      <code> 
+        const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('foo');
+    }, 300);
+  });
+
+  myPromise
+    .then(handleResolvedA, handleRejectedA)
+    .then(handleResolvedB, handleRejectedB)
+    .then(handleResolvedC, handleRejectedC);
+      </code>
+
+      <p>
+        A Promise in short:
+
+  “Imagine you are a kid. Your mom promises you that she’ll get you a new phone next week.”
+
+  You don’t know if you will get that phone until next week. Your mom can either really buy you a brand new phone, or she doesn’t, because she is not happy :(.
+
+  That is a promise. A promise has 3 states. They are:
+    <ul>
+      <li>Pending: You don’t know if you will get that phone</li>
+      <li>Fulfilled: Mom is happy, she buys you a brand new phone</li>
+      <li>Rejected: Mom is unhappy, she doesn’t buy you a phone</li>
+    </ul>
+      </p>
+    </article>
+
+  </section>
+</main>
+
+</body>
+</html>
